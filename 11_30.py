@@ -188,9 +188,19 @@ print(rainbow.index('green'))
 rainbow.pop()
 print(rainbow)
 
-#pop맨 마지막 것 삭제 append는 상극
-#sort는 정렬, reverse는 상극
-#insert 원하는곳에 하나 넣기
-#del은 여러개 구간지정해서 여러개 삭제
-#remove는 첫번째 한개 삭제
-#index는 첫번째 것 위치 출력
+'''
+1. 삭제
+pop 맨 마지막(혹은 원하는 위치 요소 1개), remove 맨 처음 요소 1개, del 구간지정 여러개
+
+2. 추가
+append 맨 마지막, #insert 원하는곳에 한개 요소 넣기
+
+3. 정렬
+sort는 오름차순 정렬, reverse는 반대
+
+4. 조회
+index는 해당문자 첫 번째 위치 출력,
+count는 해당문자 갯수 출력,
+len은 해당열 길이 출력
+
+'''
