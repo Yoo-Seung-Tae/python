@@ -180,7 +180,19 @@ def solution(str1, str2):
 print(solution("abc","aabcc"))
 print(solution("tbt", "tbbttb"))
 #############################################
+def solution(t, p):
+    answer = 0
+    k=len(p)
+    p=int(p)
 
+    for i in range(len(t)-k+1):
+        if int(t[i:k+i])<=p:
+            answer+=1
+    return answer
+
+print(solution("3141592","271"))
+print(solution("500220839878"	, "7"))
+print(solution("10203", "15"))
 #############################################
 
 #############################################

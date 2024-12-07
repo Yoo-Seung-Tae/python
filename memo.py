@@ -1,14 +1,15 @@
-def solution(str1, str2):
-    answer = ''
-    sol=[]
-    for i in range(len(str1)):
-        sol.append(str1[i])
-        sol.append(str2[i])
-        
-    answer = "".join(sol)
-    print(answer)
+def solution(babbling):
+    answer = 0
+    a=["aya", "ye", "woo", "ma"]
+
+    for i in range(len(babbling)):
+        for k in range(len(babbling[i])-len(a)+1):
+            for l in range(len(a)):
+                babbling[i].lstrip(a[l])
+        if babbling[i]=='':
+            answer+=1
     return answer
 
 
-
-print(solution("aaaaa", "bbbbb"))
+print(solution(["aya", "yee", "u", "maa", "wyeoo"]))
+print(solution(["ayaye", "uuuma", "ye", "yemawoo", "ayaa"]))
