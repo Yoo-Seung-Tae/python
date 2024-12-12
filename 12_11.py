@@ -123,8 +123,27 @@ import bbb.b as b
 b.bbb()
 b.add(3,5)
 #############################################
+f = open('./test.txt','w')
+f.write('hello world\n')
+f.close()
 
+f2 = open('test.txt')
+print(f2.read())
+# print(f2.read(3))
+# print(f2.read())
+f2.close()
+
+
+f = open('./test.txt','a')
+f.write('hello world\n')
+input('stop')
+f.close()
 #############################################
+f3 = open('test.txt')
+print(f3.readline(),end='')
+print(f3.readline(),end='')
+print(f3.readline(),end='')
+f3.close()
 
 #############################################
 
